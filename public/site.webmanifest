@@ -1,0 +1,22 @@
+{
+  "name": "FOKAL MULTIMEDIA",
+  "short_name": "FOKAL",
+  "description": "Professional videography, photography, events management, branding and content design services in Papua New Guinea",
+  "icons": [
+    {
+      "src": "https://pixzptkgvkiyzdaeffqc.supabase.co/storage/v1/object/sign/images/fokal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kMmZiYjA1NS0zYzg5LTRmMmMtODZiOS1lNDkwNDFhZWU4NWQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWFnZXMvZm9rYWwucG5nIiwiaWF0IjoxNzUzMzQ1NDE4LCJleHAiOjE3ODQ4ODE0MTh9.u57F203fGCIWXgu_3EhC6vkzeF7zlZlRtl2Qt0RyQXM",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://pixzptkgvkiyzdaeffqc.supabase.co/storage/v1/object/sign/images/fokal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kMmZiYjA1NS0zYzg5LTRmMmMtODZiOS1lNDkwNDFhZWU4NWQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWFnZXMvZm9rYWwucG5nIiwiaWF0IjoxNzUzMzQ1NDE4LCJleHAiOjE3ODQ4ODE0MTh9.u57F203fGCIWXgu_3EhC6vkzeF7zlZlRtl2Qt0RyQXM",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#f59e0b",
+  "background_color": "#020617",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
