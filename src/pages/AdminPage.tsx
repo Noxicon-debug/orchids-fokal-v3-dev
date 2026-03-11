@@ -152,9 +152,10 @@ const AdminPage: React.FC = () => {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label className="text-dark-200">Category</Label>
+                        <Label htmlFor="project-category" className="text-dark-200">Category</Label>
                         <select
-                          value={selectedProject?.category_id}
+                          id="project-category"
+                          value={selectedProject?.category_id ?? ""}
                           onChange={e => setSelectedProject(prev => ({ ...prev, category_id: e.target.value }))}
                           className="flex h-10 w-full rounded-md border border-dark-700 bg-dark-800 px-3 py-2 text-sm text-white"
                         >
