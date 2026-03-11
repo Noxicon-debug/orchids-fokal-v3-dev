@@ -11,7 +11,6 @@ import { Textarea } from '../components/ui/textarea';
 import { Button } from '../components/ui/button';
 import { Label } from '../components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 import { Checkbox } from '../components/ui/checkbox';
 
 const AdminPage: React.FC = () => {
@@ -153,22 +152,20 @@ const AdminPage: React.FC = () => {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label className="text-dark-200">Category</Label>
-                        <Select 
-                          value={selectedProject?.category_id}
-                          onValueChange={val => setSelectedProject(prev => ({ ...prev, category_id: val }))}
+                        <Label htmlFor="project-category" className="text-dark-200">Category</Label>
+                        <select
+                          id="project-category"
+                          value={selectedProject?.category_id ?? ""}
+                          onChange={e => setSelectedProject(prev => ({ ...prev, category_id: e.target.value }))}
+                          className="flex h-10 w-full rounded-md border border-dark-700 bg-dark-800 px-3 py-2 text-sm text-white"
                         >
-                          <SelectTrigger className="bg-dark-800 border-dark-700 text-white">
-                            <SelectValue placeholder="Select Category" />
-                          </SelectTrigger>
-                          <SelectContent className="bg-dark-800 border-dark-700">
-                            {categories.map(cat => (
-                              <SelectItem key={cat.id} value={cat.id} className="text-white hover:bg-dark-700">
-                                {cat.name}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
+                          <option value="" disabled>Select Category</option>
+                          {categories.map(cat => (
+                            <option key={cat.id} value={cat.id}>
+                              {cat.name}
+                            </option>
+                          ))}
+                        </select>
                       </div>
                     </div>
 
